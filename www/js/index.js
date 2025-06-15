@@ -26,4 +26,21 @@ function onDeviceReady() {
 
     console.log('Running cordova-' + cordova.platformId + '@' + cordova.version);
     document.getElementById('deviceready').classList.add('ready');
+
+    // Retrieve device information provided by cordova-plugin-device
+    var details = [
+        'Model: ' + device.model,
+        'Platform: ' + device.platform,
+        'Version: ' + device.version,
+        'Cordova: ' + device.cordova,
+        'Manufacturer: ' + (device.manufacturer || 'n/a'),
+        'Is Virtual: ' + (typeof device.isVirtual === 'boolean' ? device.isVirtual : 'n/a'),
+        'Serial: ' + (device.serial || 'n/a')
+    ].join('\n');
+
+    // Insert the information into the DOM
+    var infoElement = document.getElementById('device-info');
+    if (infoElement) {
+        infoElement.textContent = details;
+    }
 }
