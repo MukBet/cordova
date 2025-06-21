@@ -16,7 +16,8 @@
     "cordova-android": "^13.0.0",
     "cordova-browser": "^7.0.0",
     "cordova-ios": "^7.1.1",
-    "cordova-plugin-device": "github:apache/cordova-plugin-device"
+    "cordova-plugin-device": "github:apache/cordova-plugin-device",
+    "cordova-plugin-tennis": "file:../TennisPlugin"
   },
   "cordova": {
     "platforms": [
@@ -25,7 +26,8 @@
       "android"
     ],
     "plugins": {
-      "cordova-plugin-device": {}
+      "cordova-plugin-device": {},
+      "cordova-plugin-tennis": {}
     }
   }
 }

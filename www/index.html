@@ -18,15 +18,21 @@
          <title>Hello World</title>
      </head>
      <body>
-         <div class="app">
-             <h1>Apache Cordova</h1>
-             <div id="deviceready" class="blink">
-                 <p class="event listening">Connecting to Device</p>
-                 <p class="event received">Device is Ready</p>
-+                <pre id="device-info"></pre>
-             </div>
-         </div>
+         <div class="app" id="main-screen">
+            <h1>Apache Cordova</h1>
+            <div id="deviceready" class="blink">
+                <p class="event listening">Connecting to Device</p>
+                <p class="event received"><a href="#" id="start-game" style="color: cyan; text-decoration: underline;">Device is Ready - Start Game</a></p>
+                <pre id="device-info"></pre>
+            </div>
+        </div>
+
+        <div id="game-screen">
+            <canvas id="gameCanvas"></canvas>
+        </div>
+
          <script src="cordova.js"></script>
          <script src="js/index.js"></script>
+         <script src="js/tennis_game.js"></script>
      </body>
  </html>

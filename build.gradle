@@ -1,0 +1,12 @@
+repositories {
+    google()
+    mavenCentral()
+}
+
+dependencies {
+    // Добавь сюда зависимости, если требуются
+}
+
+task buildApp(type: Exec) {
+    commandLine 'cordova', 'build',/* 'android', */'browser'
+}
