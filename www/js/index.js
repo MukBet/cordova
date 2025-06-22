@@ -44,3 +44,18 @@ function onDeviceReady() {
         infoElement.textContent = details;
     }
 }
+
+document.getElementById('start-snake').addEventListener('click', function () {
+    if (window.startSnakeGame) {
+        startSnakeGame();
+    } else {
+        alert('Snake game not available1.');
+
+        if (typeof startSnakeGame === 'function') {
+            startSnakeGame();
+        } else {
+            alert('Snake game not available2');
+        }
+    }
+
+});
