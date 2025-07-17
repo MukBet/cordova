@@ -1,4 +1,4 @@
-Добавить плагин:
+Добавить плагин(так же смотри .\new_plugin_adding.md):
     Создать отдельно проект, типа папка с файлам, например так:
     plugman create --name TennisPlugin --plugin_id cordova-plugin-tennis --plugin_version 1.0.0 cordova_plugin_tennis
     В корень нового плагина добавить package.json
@@ -39,3 +39,4 @@ cordova plugin rm cordova-plugin-tennis
 cordova plugin add ../SnakePlugin --force
 cordova prepare browser
 cordova run browser
+cordova build browser android
