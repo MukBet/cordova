@@ -47,7 +47,7 @@ function onDeviceReady() {
 
 document.getElementById('start-snake').addEventListener('click', function () {
     if (window.startSnakeGame) {
-        startSnakeGame();
+        startSnakeGame(); // код с плагина, подключаемого в єто приложение, ожидается єтот плагин https://github.com/MukBet/cordova_plugin_game_snake
     } else {
         alert('Snake game not available1.');
 

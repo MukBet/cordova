@@ -40,3 +40,13 @@ cordova plugin add ../SnakePlugin --force
 cordova prepare browser
 cordova run browser
 cordova build browser android
+
+________
+# собрать приложение с обновленным кодом плагина
+cordova plugin remove cordova-plugin-snake
+cordova platform remove android
+cordova platform add android
+cordova plugin add ../SnakePlugin
+cordova prepare android
+cordova run android
+часть комамнд возможно можно пропустить, єто список был собран во время отладки и решения разных проблем.   

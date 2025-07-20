@@ -15,3 +15,8 @@ adb devices
 теерь 
 adb install platforms/android/app/build/outputs/apk/debug/app-debug.apk
 при учете что ты в папке основного проекта а перед этим сбилдил под Андроид.
+запуск игры\приложения:
+ - руками кликнуть на иконку приложения
+ - cordova run android
+
+ логи в баш\гит терминали: adb logcat | grep SnakePlugin 

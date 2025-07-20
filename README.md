@@ -35,3 +35,6 @@ document.addEventListener('deviceready', function () {
 ```
 
 This code logs basic device details, allowing you to verify that the plugin is working correctly.
+
+# Used plugins
+related to app plugin see in https://github.com/MukBet/cordova_plugin_game_snake

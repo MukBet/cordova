@@ -27,7 +27,7 @@
     ],
     "plugins": {
       "cordova-plugin-device": {},
-      "cordova-plugin-snake-newid": {}
+      "cordova-plugin-snake": {}
     }
   }
 }
