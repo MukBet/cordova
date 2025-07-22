@@ -43,19 +43,36 @@ function onDeviceReady() {
     if (infoElement) {
         infoElement.textContent = details;
     }
-}
 
-document.getElementById('start-snake').addEventListener('click', function () {
-    if (window.startSnakeGame) {
-        startSnakeGame(); // код с плагина, подключаемого в єто приложение, ожидается єтот плагин https://github.com/MukBet/cordova_plugin_game_snake
-    } else {
-        alert('Snake game not available1.');
-
-        if (typeof startSnakeGame === 'function') {
-            startSnakeGame();
+    document.getElementById('start-snake').addEventListener('click', function () {
+        if (window.startSnakeGame) {
+            startSnakeGame(); // код с плагина, подключаемого в єто приложение, ожидается єтот плагин https://github.com/MukBet/cordova_plugin_game_snake
         } else {
-            alert('Snake game not available2');
-        }
-    }
+            alert('Snake game not available.');
 
-});
+            if (typeof startSnakeGame === 'function') {
+                startSnakeGame();
+            } else {
+                alert('Snake game not available2');
+            }
+        }
+
+    });
+
+    document.getElementById('start-tetris').addEventListener('click', function () {
+        
+        console.log('deviceready fired');
+        console.log('typeof TetrisPlugin:', typeof TetrisPlugin); // должно быть "object"
+        console.log('typeof TetrisPlugin.start:', typeof TetrisPlugin?.start); // должно быть "function"
+        if (window.TetrisPlugin && typeof TetrisPlugin.start === 'function') {
+            console.log('TetrisPlugin is loaded.');
+        } else {
+            console.warn('TetrisPlugin is NOT available!');
+        }
+        if (window.TetrisPlugin && typeof TetrisPlugin.start === 'function') {
+            TetrisPlugin.start(); // код с плагина, подключаемого в єто приложение, ожидается єтот плагин ...
+        } else {
+            alert('Tetris game not available.');
+        }
+    });
+}

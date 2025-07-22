@@ -17,7 +17,8 @@
     "cordova-browser": "^7.0.0",
     "cordova-ios": "^7.1.1",
     "cordova-plugin-device": "github:apache/cordova-plugin-device",
-    "cordova-plugin-snake": "file:../SnakePlugin"
+    "cordova-plugin-snake": "file:../SnakePlugin",
+    "cordova-plugin-tetris": "github:MukBet/CordovaTetrisPlugin"
   },
   "cordova": {
     "platforms": [
@@ -27,7 +28,8 @@
     ],
     "plugins": {
       "cordova-plugin-device": {},
-      "cordova-plugin-snake": {}
+      "cordova-plugin-snake": {},
+      "cordova-plugin-tetris": {}
     }
   }
 }
