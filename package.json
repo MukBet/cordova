@@ -31,5 +31,8 @@
       "cordova-plugin-snake": {},
       "cordova-plugin-tetris": {}
     }
+  },
+  "dependencies": {
+    "cordova-plugin-tetris": "github:MukBet/CordovaTetrisPlugin"
   }
 }
